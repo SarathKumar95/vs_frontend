@@ -8,10 +8,16 @@ import axios from 'axios';
 
 const endpointMapping = {
     'Notion': 'notion',
-    'Airtable': 'airtable'
+    'Airtable': 'airtable',
+    'Hubspot': 'hubspot'
 };
 
 export const DataForm = ({ integrationType, credentials }) => {
+
+    // log what integrationType it receuves
+    // console.log('DataForm integrationType:', integrationType);
+    
+
     const [loadedData, setLoadedData] = useState(null);
     const endpoint = endpointMapping[integrationType];
 

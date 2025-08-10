@@ -44,7 +44,7 @@ export const HubspotIntegration = ({ user, org, integrationParams, setIntegratio
             const credentials = response.data;
             if (credentials) {
                 setIsConnected(true);
-                setIntegrationParams(prev => ({ ...prev, credentials, type: 'HubSpot' }));
+                setIntegrationParams(prev => ({ ...prev, credentials, type: 'Hubspot' }));
             }
         } catch (e) {
             alert(e?.response?.data?.detail || 'Failed to fetch HubSpot credentials');
