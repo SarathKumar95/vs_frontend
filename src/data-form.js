@@ -8,7 +8,7 @@ import axios from 'axios';
 
 const endpointMapping = {
     'Notion': 'notion',
-    'Airtable': 'airtable',
+    'Airtable': 'airtable'
 };
 
 export const DataForm = ({ integrationType, credentials }) => {
